@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29050eed-03de-4adf-bb2e-642ecdac8a6e" name="Changes" comment="Creating interface for driver">
+    <list default="true" id="29050eed-03de-4adf-bb2e-642ecdac8a6e" name="Changes" comment="1.Creating properties&#10;2.First smoke test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Chrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Chrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/strategies/Chrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DriverSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DriverStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/strategies/DriverStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DriverStrategyImplementar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/strategies/DriverStrategyImplementar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Firefox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/strategies/Firefox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FrameworkProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/FrameworkProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PhantomJs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/strategies/PhantomJs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/framework.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/framework.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/geckodriver.exe" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,19 +51,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/e.gorniker/IdeaProjects/Java_basic_Page_Object_Modal&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/e.gorniker/IdeaProjects/Java_basic_Page_Object_Modal/src/main/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\e.gorniker\IdeaProjects\Java_basic_Page_Object_Modal\src\main\resources" />
       <recent name="C:\Users\e.gorniker\IdeaProjects\Java_basic_Page_Object_Modal" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -95,11 +104,19 @@
       <option name="project" value="LOCAL" />
       <updated>1682076079429</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1.Creating properties&#10;2.First smoke test">
+      <created>1682087894254</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682087894254</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creating interface for driver" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating interface for driver" />
+    <MESSAGE value="1.Creating properties&#10;2.First smoke test" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.Creating properties&#10;2.First smoke test" />
   </component>
 </project>
