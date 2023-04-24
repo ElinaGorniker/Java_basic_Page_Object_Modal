@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29050eed-03de-4adf-bb2e-642ecdac8a6e" name="Changes" comment="1.Creating properties&#10;2.First smoke test">
+    <list default="true" id="29050eed-03de-4adf-bb2e-642ecdac8a6e" name="Changes" comment="1.Adding constants&#10;2.Refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Chrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/strategies/Chrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DriverSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DriverStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/strategies/DriverStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DriverStrategyImplementar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/strategies/DriverStrategyImplementar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Firefox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/strategies/Firefox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FrameworkProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/FrameworkProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DriverSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/DriverSingleton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PhantomJs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/strategies/PhantomJs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/strategies/Chrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/Chrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/strategies/DriverStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/DriverStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/strategies/DriverStrategyImplementar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/DriverStrategyImplementar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/strategies/Firefox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/Firefox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/strategies/PhantomJs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/PhantomJs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/framework.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/framework.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/geckodriver.exe" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,12 +109,20 @@
       <option name="project" value="LOCAL" />
       <updated>1682087894254</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1.Adding constants&#10;2.Refactoring">
+      <created>1682315012883</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682315012883</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creating interface for driver" />
     <MESSAGE value="1.Creating properties&#10;2.First smoke test" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.Creating properties&#10;2.First smoke test" />
+    <MESSAGE value="1.Adding constants&#10;2.Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.Adding constants&#10;2.Refactoring" />
   </component>
 </project>
