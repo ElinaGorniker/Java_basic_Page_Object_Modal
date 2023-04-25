@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import utils.FrameworkProperties;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         FrameworkProperties frameworkProperties = new FrameworkProperties();
         DriverSingleton driverSingleton = DriverSingleton.getInstance(frameworkProperties.getProperty("browser"));
         WebDriver driver = DriverSingleton.getDriver();
@@ -20,17 +20,19 @@ public class Main {
         signInPage.logIn("testjohndaw@gmail.com", "test132");
 
         if (homePage.getUsername().equals("Hello, John"))
-            System.out.println("Test passed");
+            System.out.println("Test signIn passed");
         else
-            System.out.println("Test failed");
+            System.out.println("Test signIn failed");
         homePage.clickShopButton();
-        shopPage.addElementToCart();
+        shopPage.goToSecondPage();
+        shopPage.addTestBookToCart();
         shopPage.goToCart();
-        cartPage.addCoupon();
         cartPage.proceedCheckout();
         checkoutPage.provideBillingDetails();
         checkoutPage.getTotalAmount();
         checkoutPage.placeOrder();
+        checkoutPage.getOrderStatus();
+
         DriverSingleton.closeObjectInstance();
 
     }

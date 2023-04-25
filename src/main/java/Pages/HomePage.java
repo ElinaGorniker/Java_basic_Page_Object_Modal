@@ -38,7 +38,7 @@ public class HomePage {
             wait.until(ExpectedConditions.elementToBeClickable(signInButton));
             commerceStoreNoticeDismiss.click();
             signInButton.click();
-            System.out.println("commerce note is dismissed");
+            System.out.println("Commerce note is dismissed");
         } catch (NoSuchElementException e) {
             System.out.println("There is No commerce note");
 

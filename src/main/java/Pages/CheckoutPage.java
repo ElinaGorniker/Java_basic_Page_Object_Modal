@@ -45,29 +45,44 @@ public class CheckoutPage {
     private WebElement totalAmount;
     @FindBy(css = "#post-207 > header > h1")
     private WebElement orderStatus;
+    @FindBy(css = "#post-207 > content > div > div > div > p")
+    private WebElement orderStatusMSG;
 
     public void provideBillingDetails() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
         wait.until(ExpectedConditions.visibilityOf(streetHouse));
         streetHouse.sendKeys("abc");
-        postcode.sendKeys("1111");
-        city.sendKeys("Downtown");
+        //postcode.sendKeys("1111");
+        //city.sendKeys("Downtown");
         System.out.println("The provideBillingDetails was executed successfully");
 
     }
 
-public String getTotalAmount() {
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
-    wait.until(ExpectedConditions.visibilityOf(totalAmount));
-    System.out.println("The getTotalAmount was executed successfully. Total Amount is " + totalAmount.getText());
-    return totalAmount.getText();
+    public String getTotalAmount() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
+        wait.until(ExpectedConditions.visibilityOf(totalAmount));
+        System.out.println("The getTotalAmount was executed successfully. Total Amount is " + totalAmount.getText());
+        return totalAmount.getText();
 
-}
+    }
 
-public void placeOrder() {
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
-    wait.until(ExpectedConditions.visibilityOf(placeOrderButton));
-    placeOrderButton.click();
-    System.out.println("The placeOrder was executed successfully");
-}
+    public void placeOrder() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
+        wait.until(ExpectedConditions.visibilityOf(placeOrderButton));
+        placeOrderButton.click();
+        System.out.println("The placeOrder was executed successfully");
+    }
+
+    public String getOrderStatus() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
+        wait.until(ExpectedConditions.visibilityOf(orderStatusMSG));
+        String orderStatusMessage = orderStatusMSG.getText();
+        System.out.println("Order Status Message is " + orderStatusMessage);
+        if (orderStatus.getText().equals("Order received")) {
+            System.out.println("Test Order Status passed");
+            System.out.println("Order status is " + orderStatus.getText());
+        } else System.out.println("Order status is " + orderStatus.getText());
+        return orderStatus.getText();
+
+    }
 }
