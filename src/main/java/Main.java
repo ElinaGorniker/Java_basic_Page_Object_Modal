@@ -1,4 +1,5 @@
 import Pages.HomePage;
+import Pages.ShopPage;
 import Pages.SignInPage;
 import drivers.DriverSingleton;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +14,7 @@ public class Main {
 
         HomePage homePage = new HomePage();
         SignInPage signInPage = new SignInPage();
+        ShopPage shopPage = new ShopPage();
 
         homePage.clickSignIn();
         signInPage.logIn("testjohndaw@gmail.com", "test132");
@@ -21,6 +23,8 @@ public class Main {
             System.out.println("Test passed");
         else
             System.out.println("Test failed");
+        homePage.clickShopButton();
+        shopPage.addElementToCart();
 
         DriverSingleton.closeObjectInstance();
 

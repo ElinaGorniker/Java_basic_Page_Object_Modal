@@ -1,13 +1,13 @@
 package Pages;
 
 import drivers.DriverSingleton;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.Constants;
 
 import java.time.Duration;
 
@@ -28,9 +28,13 @@ public class HomePage {
     @FindBy(css = "#menu-item-750 > a")
     private WebElement username;
 
+    @FindBy(css = "body > p > a.woocommerce-store-notice__dismiss-link")
+    private WebElement commerceStoreNoticeDismiss;
+
     public void clickSignIn() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
         wait.until(ExpectedConditions.elementToBeClickable(signInButton));
+        commerceStoreNoticeDismiss.click();
         signInButton.click();
     }
 
