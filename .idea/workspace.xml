@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29050eed-03de-4adf-bb2e-642ecdac8a6e" name="Changes" comment="1.Refactoring packages&#10;2.Adding Home and SignIn pages&#10;3.Smoke test passed">
+    <list default="true" id="29050eed-03de-4adf-bb2e-642ecdac8a6e" name="Changes" comment="1.Adding Shop page&#10;2.Smoke test &quot;Shop page&quot; passed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ShopPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ShopPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Constants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,14 +120,33 @@
       <option name="project" value="LOCAL" />
       <updated>1682327527948</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1.Adding Shop page&#10;2.Smoke test &quot;Shop page&quot; passed">
+      <created>1682405117491</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682405117491</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creating interface for driver" />
     <MESSAGE value="1.Creating properties&#10;2.First smoke test" />
     <MESSAGE value="1.Adding constants&#10;2.Refactoring" />
     <MESSAGE value="1.Refactoring packages&#10;2.Adding Home and SignIn pages&#10;3.Smoke test passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.Refactoring packages&#10;2.Adding Home and SignIn pages&#10;3.Smoke test passed" />
+    <MESSAGE value="1.Adding Shop page&#10;2.Smoke test &quot;Shop page&quot; passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.Adding Shop page&#10;2.Smoke test &quot;Shop page&quot; passed" />
   </component>
 </project>

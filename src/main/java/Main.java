@@ -1,3 +1,4 @@
+import Pages.CartPage;
 import Pages.HomePage;
 import Pages.ShopPage;
 import Pages.SignInPage;
@@ -15,6 +16,7 @@ public class Main {
         HomePage homePage = new HomePage();
         SignInPage signInPage = new SignInPage();
         ShopPage shopPage = new ShopPage();
+        CartPage cartPage = new CartPage();
 
         homePage.clickSignIn();
         signInPage.logIn("testjohndaw@gmail.com", "test132");
@@ -25,6 +27,9 @@ public class Main {
             System.out.println("Test failed");
         homePage.clickShopButton();
         shopPage.addElementToCart();
+        shopPage.goToCart();
+        cartPage.addCoupon();
+        cartPage.proceedCheckout();
 
         DriverSingleton.closeObjectInstance();
 

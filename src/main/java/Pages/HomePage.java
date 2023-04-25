@@ -1,6 +1,7 @@
 package Pages;
 
 import drivers.DriverSingleton;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,10 +33,16 @@ public class HomePage {
     private WebElement commerceStoreNoticeDismiss;
 
     public void clickSignIn() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
-        wait.until(ExpectedConditions.elementToBeClickable(signInButton));
-        commerceStoreNoticeDismiss.click();
-        signInButton.click();
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
+            wait.until(ExpectedConditions.elementToBeClickable(signInButton));
+            commerceStoreNoticeDismiss.click();
+            signInButton.click();
+            System.out.println("commerce note is dismissed");
+        } catch (NoSuchElementException e) {
+            System.out.println("There is No commerce note");
+
+        }
     }
 
     public void clickShopButton() {

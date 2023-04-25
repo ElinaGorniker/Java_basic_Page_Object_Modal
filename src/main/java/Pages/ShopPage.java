@@ -1,6 +1,8 @@
 package Pages;
 
 import drivers.DriverSingleton;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,8 +33,13 @@ public class ShopPage {
     @FindBy(css = "body > nav > div.wb4wp-wrapper > div.wb4wp-right > div > a > span")
     private WebElement numberOfProducts;
 
-    @FindBy(css = "body > p > a.woocommerce-store-notice__dismiss-link")
-    private WebElement commerceStoreNoticeDismiss;
+
+    public void goToCart() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
+        wait.until(ExpectedConditions.elementToBeClickable(cartButton));
+        cartButton.click();
+    }
+
 
     public void addElementToCart() {
         addToCardButton.click();
@@ -42,16 +49,13 @@ public class ShopPage {
         else {
             System.out.println("Cart has not been updated");
         }
-
-    }
-
-    public void proceedToCheckout() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
-        wait.until(ExpectedConditions.elementToBeClickable(cartButton));
-
-        cartButton.click();
     }
 }
+
+
+
+
+
 
 
 
