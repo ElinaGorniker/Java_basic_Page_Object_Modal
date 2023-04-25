@@ -1,7 +1,4 @@
-import Pages.CartPage;
-import Pages.HomePage;
-import Pages.ShopPage;
-import Pages.SignInPage;
+import Pages.*;
 import drivers.DriverSingleton;
 import org.openqa.selenium.WebDriver;
 import utils.FrameworkProperties;
@@ -17,6 +14,7 @@ public class Main {
         SignInPage signInPage = new SignInPage();
         ShopPage shopPage = new ShopPage();
         CartPage cartPage = new CartPage();
+        CheckoutPage checkoutPage = new CheckoutPage();
 
         homePage.clickSignIn();
         signInPage.logIn("testjohndaw@gmail.com", "test132");
@@ -30,7 +28,9 @@ public class Main {
         shopPage.goToCart();
         cartPage.addCoupon();
         cartPage.proceedCheckout();
-
+        checkoutPage.provideBillingDetails();
+        checkoutPage.getTotalAmount();
+        checkoutPage.placeOrder();
         DriverSingleton.closeObjectInstance();
 
     }
