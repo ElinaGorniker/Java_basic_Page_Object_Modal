@@ -32,17 +32,20 @@ public class HomePage {
     @FindBy(css = "body > p > a.woocommerce-store-notice__dismiss-link")
     private WebElement commerceStoreNoticeDismiss;
 
-    public void clickSignIn() {
+    public void dismissCommerceStoreNotice() {
         try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
-            wait.until(ExpectedConditions.elementToBeClickable(signInButton));
             commerceStoreNoticeDismiss.click();
-            signInButton.click();
-            System.out.println("Commerce note is dismissed");
+            System.out.println("Commerce notice is dismissed");
         } catch (NoSuchElementException e) {
-            System.out.println("There is No commerce note");
-
+            System.out.println("There is No commerce notice");
         }
+
+    }
+    public void clickSignIn() {
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
+        wait.until(ExpectedConditions.elementToBeClickable(signInButton));
+        signInButton.click();
     }
 
     public void clickShopButton() {

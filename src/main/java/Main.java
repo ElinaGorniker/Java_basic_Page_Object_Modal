@@ -16,6 +16,7 @@ public class Main {
         CartPage cartPage = new CartPage();
         CheckoutPage checkoutPage = new CheckoutPage();
 
+        homePage.dismissCommerceStoreNotice();
         homePage.clickSignIn();
         signInPage.logIn("testjohndaw@gmail.com", "test132");
 
