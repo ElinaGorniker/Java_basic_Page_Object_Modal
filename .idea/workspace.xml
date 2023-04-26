@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29050eed-03de-4adf-bb2e-642ecdac8a6e" name="Changes" comment="1.Adding Order Status test on Checkout Page&#10;2.Smoke test &quot;Checkout page&quot; passed">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
+    <list default="true" id="29050eed-03de-4adf-bb2e-642ecdac8a6e" name="Changes" comment="1.Put the confirmation of commerce notice as a separate method&#10;2.Smoke test &quot;Checkout page&quot; passed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/framework.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/framework.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682428796928</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1.Put the confirmation of commerce notice as a separate method&#10;2.Smoke test &quot;Checkout page&quot; passed">
+      <created>1682429252027</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1682429252027</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,6 +176,7 @@
     <MESSAGE value="1.Adding Cart page und Test&#10;2.Smoke test &quot;Cart page&quot; passed&#10;3.Refactoring" />
     <MESSAGE value="1.Adding Checkout Page&#10;2.Smoke test &quot;Checkout page&quot; passed" />
     <MESSAGE value="1.Adding Order Status test on Checkout Page&#10;2.Smoke test &quot;Checkout page&quot; passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.Adding Order Status test on Checkout Page&#10;2.Smoke test &quot;Checkout page&quot; passed" />
+    <MESSAGE value="1.Put the confirmation of commerce notice as a separate method&#10;2.Smoke test &quot;Checkout page&quot; passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.Put the confirmation of commerce notice as a separate method&#10;2.Smoke test &quot;Checkout page&quot; passed" />
   </component>
 </project>

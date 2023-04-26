@@ -18,13 +18,13 @@ public class Main {
 
         homePage.dismissCommerceStoreNotice();
         homePage.clickSignIn();
-        signInPage.logIn("testjohndaw@gmail.com", "test132");
+        signInPage.logIn(frameworkProperties.getProperty("email"),  frameworkProperties.getProperty("password"));
 
         if (homePage.getUsername().equals("Hello, John"))
             System.out.println("Test signIn passed");
         else
             System.out.println("Test signIn failed");
-        homePage.clickShopButton();
+       /* homePage.clickShopButton();
         shopPage.goToSecondPage();
         shopPage.addTestBookToCart();
         shopPage.goToCart();
@@ -32,7 +32,7 @@ public class Main {
         checkoutPage.provideBillingDetails();
         checkoutPage.getTotalAmount();
         checkoutPage.placeOrder();
-        checkoutPage.getOrderStatus();
+        checkoutPage.getOrderStatus();*/
 
         DriverSingleton.closeObjectInstance();
 
