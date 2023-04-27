@@ -1,6 +1,7 @@
 package Pages;
 
 import drivers.DriverSingleton;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,6 +35,10 @@ public class ShopPage {
     @FindBy(css = "#main > nav > ul > li:nth-child(2) > a")
     private WebElement secondPage;
 
+    @FindBy(css = "#main > nav > ul > li:nth-child(4) > a")
+    private WebElement thirdPage;
+
+
     public void goToCart() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
         wait.until(ExpectedConditions.elementToBeClickable(cartButton));
@@ -47,8 +52,17 @@ public class ShopPage {
         System.out.println("The second page opens");
     }
 
+    public void goToThirdPage() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
+        wait.until(ExpectedConditions.elementToBeClickable(thirdPage));
+        thirdPage.click();
+        System.out.println("The third page opens");
+    }
+
     public void addElementToCart() {
         addToCardButton.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
+        wait.until(ExpectedConditions.elementToBeClickable(numberOfProducts));
 
         if (numberOfProducts.getText().contains(Constants.CART_QUANTITY))
             System.out.println("Cart has been updated");
@@ -57,17 +71,26 @@ public class ShopPage {
         }
     }
 
-    public void addTestBookToCart() {
+    public void addTestBookToCart() throws InterruptedException {
 
         addToCartButtonForTestBook0.click();
         System.out.println("The book was added to cart");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
         wait.until(ExpectedConditions.elementToBeClickable(numberOfProducts));
+
         if (numberOfProducts.getText().contains(Constants.CART_QUANTITY))
             System.out.println("Cart has been updated");
         else {
             System.out.println("Cart has not been updated");
         }
+
+    }
+
+    public String getNumberOfProduct() {
+
+        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
+        //wait.until(ExpectedConditions.elementToBeClickable(numberOfProducts));
+        return numberOfProducts.getText();
     }
 }
 

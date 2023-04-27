@@ -25,7 +25,7 @@ public class CartPage {
     @FindBy(css = "#post-206 > content > div > div > form > table > tbody > tr.woocommerce-cart-form__cart-item.cart_item > td.product-remove > a")
     private WebElement deleteButton;
 
-    @FindBy(id = "coupon_code")
+    @FindBy(css = "#coupon_code")
     private WebElement couponCodeField;
 
     @FindBy(css = "#post-206 > content > div > div > div.cart-collaterals > div > table > tbody > tr.cart-discount.coupon-udemy-challenge > td > span")
@@ -48,7 +48,8 @@ public class CartPage {
     @FindBy(id = "quantity_64479cd1dde5f")
     private WebElement itemQuantity;
 
-    @FindBy(css = "#post-206 > content > div > div > form > table > tbody > tr:nth-child(2) > td > div > button")
+    @FindBy(css = "#post-206 > content > div > div > form > table > tbody > tr:nth-child(3) > td > div > button")
+
     private WebElement applyCouponButton;
 
 

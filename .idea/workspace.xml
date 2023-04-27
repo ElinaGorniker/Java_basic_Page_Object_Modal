@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29050eed-03de-4adf-bb2e-642ecdac8a6e" name="Changes" comment="1.Put the confirmation of commerce notice as a separate method&#10;2.Smoke test &quot;Checkout page&quot; passed">
+    <list default="true" id="29050eed-03de-4adf-bb2e-642ecdac8a6e" name="Changes" comment="1.Encoding of the password&#10;2.Adding class Utils">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ShopPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ShopPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/DriverStrategyImplementar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/DriverStrategyImplementar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/framework.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/framework.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +156,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682429252027</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1.Entcoding of the password&#10;2.Adding class Utils">
+      <created>1682511248375</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682511248375</updated>
+    </task>
+    <task id="LOCAL-00013" summary="1.Encoding of the password&#10;2.Adding class Utils">
+      <created>1682511269366</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682511269366</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +194,8 @@
     <MESSAGE value="1.Adding Checkout Page&#10;2.Smoke test &quot;Checkout page&quot; passed" />
     <MESSAGE value="1.Adding Order Status test on Checkout Page&#10;2.Smoke test &quot;Checkout page&quot; passed" />
     <MESSAGE value="1.Put the confirmation of commerce notice as a separate method&#10;2.Smoke test &quot;Checkout page&quot; passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.Put the confirmation of commerce notice as a separate method&#10;2.Smoke test &quot;Checkout page&quot; passed" />
+    <MESSAGE value="1.Entcoding of the password&#10;2.Adding class Utils" />
+    <MESSAGE value="1.Encoding of the password&#10;2.Adding class Utils" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.Encoding of the password&#10;2.Adding class Utils" />
   </component>
 </project>
