@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29050eed-03de-4adf-bb2e-642ecdac8a6e" name="Changes" comment="1.Refactoring&#10;2.Adding JUnit">
+    <list default="true" id="29050eed-03de-4adf-bb2e-642ecdac8a6e" name="Changes" comment="1.Refactoring&#10;2.Adding Screenshots&#10;3. Adding FullWorkflowTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ShopPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ShopPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682599299221</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="1.Refactoring&#10;2.Adding Screenshots&#10;3. Adding FullWorkflowTest">
+      <created>1682665541920</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1682665541920</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,6 +251,7 @@
     <MESSAGE value="1.Entcoding of the password&#10;2.Adding class Utils" />
     <MESSAGE value="1.Encoding of the password&#10;2.Adding class Utils" />
     <MESSAGE value="1.Refactoring&#10;2.Adding JUnit" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.Refactoring&#10;2.Adding JUnit" />
+    <MESSAGE value="1.Refactoring&#10;2.Adding Screenshots&#10;3. Adding FullWorkflowTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.Refactoring&#10;2.Adding Screenshots&#10;3. Adding FullWorkflowTest" />
   </component>
 </project>
