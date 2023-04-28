@@ -3,10 +3,10 @@ import drivers.DriverSingleton;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.jupiter.api.AfterAll;
 import org.openqa.selenium.WebDriver;
 import utils.Constants;
 import utils.FrameworkProperties;
-
 import static org.junit.Assert.assertEquals;
 
 public class Tests {
@@ -46,6 +46,10 @@ public class Tests {
     @Test
     public void testingAddingThingsToCart() throws InterruptedException {
         driver.get(Constants.URL);
+        homePage.clickSignIn();
+        signInPage.logIn(frameworkProperties.getProperty(Constants.EMAIL), frameworkProperties.getProperty(Constants.PASSWORD));
+        assertEquals(frameworkProperties.getProperty(Constants.USERNAME),
+                homePage.getUsername());
         homePage.dismissCommerceStoreNotice();
         homePage.clickShopButton();
         shopPage.goToSecondPage();
@@ -56,12 +60,19 @@ public class Tests {
     }
 
     @Test
-    public void testingTheFullBuyingProcess() throws InterruptedException {
+    public void testingTheFullBuyingProcess()  {
         driver.get(Constants.URL);
         homePage.clickShopButton();
+
+        homePage.dismissCommerceStoreNotice();
+
+        homePage.clickSignIn();
+        signInPage.logIn(frameworkProperties.getProperty(Constants.EMAIL), frameworkProperties.getProperty(Constants.PASSWORD));
+        assertEquals(frameworkProperties.getProperty(Constants.USERNAME),
+                homePage.getUsername());
+        homePage.dismissCommerceStoreNotice();
         shopPage.addElementToCart();
         shopPage.goToSecondPage();
-        shopPage.addTestBookToCart();
         shopPage.goToCart();
         cartPage.addCoupon();
         cartPage.proceedCheckout();
@@ -72,46 +83,10 @@ public class Tests {
 
     }
 
-    @AfterClass
+    @AfterAll
     public static void closeObjects() {
         driver.close();
     }
 
 
 }
-
-
-/*
-    DriverSingleton driverSingleton = DriverSingleton.getInstance(frameworkProperties.getProperty("browser"));
-    WebDriver driver = DriverSingleton.getDriver();
-        driver.get("https://bitheap.tech");
-
-    HomePage homePage = new HomePage();
-    SignInPage signInPage = new SignInPage();
-    ShopPage shopPage = new ShopPage();
-    CartPage cartPage = new CartPage();
-    CheckoutPage checkoutPage = new CheckoutPage();
-
-        homePage.dismissCommerceStoreNotice();
-        homePage.clickSignIn();
-        signInPage.logIn(frameworkProperties.getProperty("email"),frameworkProperties.getProperty("password"));
-
-        if(homePage.getUsername().
-
-    equals(frameworkProperties.getProperty(Constants.USERNAME)))
-            System.out.println("Test signIn passed");
-        else
-                System.out.println("Test signIn failed");
-       /* homePage.clickShopButton();
-        shopPage.goToSecondPage();
-        shopPage.addTestBookToCart();
-        shopPage.goToCart();
-        cartPage.proceedCheckout();
-        checkoutPage.provideBillingDetails();
-        checkoutPage.getTotalAmount();
-        checkoutPage.placeOrder();
-        checkoutPage.getOrderStatus();*/
-/*
-        DriverSingleton.closeObjectInstance();
-}
-*/

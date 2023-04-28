@@ -48,7 +48,7 @@ public class CartPage {
     @FindBy(id = "quantity_64479cd1dde5f")
     private WebElement itemQuantity;
 
-    @FindBy(css = "#post-206 > content > div > div > form > table > tbody > tr:nth-child(3) > td > div > button")
+    @FindBy(css = "#post-206 > content > div > div > form > table > tbody > tr:nth-child(2) > td > div > button")
 
     private WebElement applyCouponButton;
 

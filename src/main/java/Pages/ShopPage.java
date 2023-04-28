@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Constants;
+import utils.Utils;
 
 import java.time.Duration;
 
@@ -60,6 +61,7 @@ public class ShopPage {
     }
 
     public void addElementToCart() {
+        Utils.takeScreenshot();
         addToCardButton.click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT));
         wait.until(ExpectedConditions.elementToBeClickable(numberOfProducts));
@@ -68,6 +70,7 @@ public class ShopPage {
             System.out.println("Cart has been updated");
         else {
             System.out.println("Cart has not been updated");
+            Utils.takeScreenshot();
         }
     }
 
