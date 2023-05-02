@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29050eed-03de-4adf-bb2e-642ecdac8a6e" name="Changes" comment="1.Refactoring&#10;2.Adding Screenshots&#10;3. Adding FullWorkflowTest">
+    <list default="true" id="29050eed-03de-4adf-bb2e-642ecdac8a6e" name="Changes" comment="The last version before a big change to BDD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/framework.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/framework.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/e.gorniker/IdeaProjects/Java_basic_Page_Object_Modal/src/main/resources",
+    "last_opened_file_path": "C:/Users/e.gorniker/IdeaProjects/Java_basic_Page_Object_Modal",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -224,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682665541920</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="The last version before a big change to BDD">
+      <created>1682670116355</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1682670116355</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,6 +261,7 @@
     <MESSAGE value="1.Encoding of the password&#10;2.Adding class Utils" />
     <MESSAGE value="1.Refactoring&#10;2.Adding JUnit" />
     <MESSAGE value="1.Refactoring&#10;2.Adding Screenshots&#10;3. Adding FullWorkflowTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.Refactoring&#10;2.Adding Screenshots&#10;3. Adding FullWorkflowTest" />
+    <MESSAGE value="The last version before a big change to BDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="The last version before a big change to BDD" />
   </component>
 </project>
