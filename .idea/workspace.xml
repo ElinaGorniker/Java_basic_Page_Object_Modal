@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29050eed-03de-4adf-bb2e-642ecdac8a6e" name="Changes" comment="The last version before a big change to BDD">
+      <change afterPath="$PROJECT_DIR$/src/main/java/automation/config/AutomationFrameworkConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/Pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/Pages/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ShopPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/Pages/ShopPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/Pages/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/RunFrameworkConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/Chrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/drivers/Chrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/DriverSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/drivers/DriverSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/DriverStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/drivers/DriverStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/DriverStrategyImplementar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/drivers/DriverStrategyImplementar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/Firefox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/drivers/Firefox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/PhantomJs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/drivers/PhantomJs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/FrameworkProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/utils/FrameworkProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/configurationProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/utils/ConfigurationProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/framework.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/framework.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,17 +62,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/e.gorniker/IdeaProjects/Java_basic_Page_Object_Modal",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/e.gorniker/IdeaProjects/Java_basic_Page_Object_Modal&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\e.gorniker\IdeaProjects\Java_basic_Page_Object_Modal\src\main\resources" />
@@ -66,7 +85,47 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.testingAddingThingsToCart">
+  <component name="RunManager" selected="JUnit.RunTests">
+    <configuration name="RunTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java_basic_Page_Object_Modal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automation" />
+      <option name="MAIN_CLASS_NAME" value="automation.RunTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java_basic_Page_Object_Modal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automation" />
+      <option name="MAIN_CLASS_NAME" value="automation.RunTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java_basic_Page_Object_Modal" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tests.testingAddingThingsToCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java_basic_Page_Object_Modal" />
       <option name="PACKAGE_NAME" value="" />
@@ -87,21 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.testingTheFullBuyingProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java_basic_Page_Object_Modal" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tests" />
-      <option name="METHOD_NAME" value="testingTheFullBuyingProcess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Tests.testingAddingThingsToCart" />
+        <item itemvalue="JUnit.RunTests" />
         <item itemvalue="JUnit.Tests.testingAuthentication" />
-        <item itemvalue="JUnit.Tests.testingTheFullBuyingProcess" />
+        <item itemvalue="JUnit.Tests" />
+        <item itemvalue="JUnit.RunTests.test" />
+        <item itemvalue="JUnit.Tests.testingAddingThingsToCart" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682670116355</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="The last version before a big change to BDD">
+      <created>1683013440004</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683013440004</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,5 +321,21 @@
     <MESSAGE value="1.Refactoring&#10;2.Adding Screenshots&#10;3. Adding FullWorkflowTest" />
     <MESSAGE value="The last version before a big change to BDD" />
     <option name="LAST_COMMIT_MESSAGE" value="The last version before a big change to BDD" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/automation/drivers/DriverSingleton.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/automation/drivers/DriverSingleton.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

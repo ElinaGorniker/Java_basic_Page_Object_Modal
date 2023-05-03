@@ -1,16 +1,15 @@
-import Pages.*;
-import drivers.DriverSingleton;
-import org.junit.AfterClass;
+
+import automation.Pages.*;
+import automation.drivers.DriverSingleton;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.jupiter.api.AfterAll;
 import org.openqa.selenium.WebDriver;
-import utils.Constants;
-import utils.FrameworkProperties;
+import automation.utils.Constants;
+import automation.utils.FrameworkProperties;
 import static org.junit.Assert.assertEquals;
 
 public class Tests {
-
 
     static FrameworkProperties frameworkProperties;
     static WebDriver driver;
@@ -43,7 +42,7 @@ public class Tests {
                 homePage.getUsername());
     }
 
-    @Test
+   /* @Test
     public void testingAddingThingsToCart() throws InterruptedException {
         driver.get(Constants.URL);
         homePage.clickSignIn();
@@ -82,7 +81,7 @@ public class Tests {
 
 
     }
-
+*/
     @AfterAll
     public static void closeObjects() {
         driver.close();

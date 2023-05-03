@@ -1,11 +1,11 @@
-package utils;
+package automation.utils;
 
 public class Constants {
     public static final String PROP_FILE_NAME = "framework.properties";
     public static final String FILE_NOT_FOUND_EXCEPTION_MESSAGE = "The property file has not found";
-    public static final String CHROME = "drivers.Chrome";
-    public static final String FIREFOX = "drivers.Firefox";
-    public static final String PHANTOMJS = "drivers.PhantomJs";
+    public static final String CHROME = "automation.drivers.Chrome";
+    public static final String FIREFOX = "automation.drivers.Firefox";
+    public static final String PHANTOMJS = "automation.drivers.PhantomJs";
     public static final String BROWSER = "browser";
     public static final String CART_QUANTITY = "1 Product";
     public static final int TIMEOUT = 15;

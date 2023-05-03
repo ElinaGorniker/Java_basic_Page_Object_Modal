@@ -1,6 +1,6 @@
-package drivers;
+package automation.drivers;
 
-import utils.Constants;
+import automation.utils.Constants;
 
 public class DriverStrategyImplementar {
     public static DriverStrategy chooseStrategy(String strategy) {

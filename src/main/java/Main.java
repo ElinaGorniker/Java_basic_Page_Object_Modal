@@ -1,7 +1,8 @@
-import Pages.*;
-import drivers.DriverSingleton;
+
+import automation.Pages.*;
+import automation.drivers.DriverSingleton;
 import org.openqa.selenium.WebDriver;
-import utils.FrameworkProperties;
+import automation.utils.FrameworkProperties;
 
 public class Main {
     public static void main(String[] args) throws Exception {
